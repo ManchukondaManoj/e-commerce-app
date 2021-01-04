@@ -33,7 +33,6 @@ userSchema.pre('save', async function (next) {
     next();
   }
   const salt = bcrypt.genSaltSync(10);
-  console.log('salt', salt);
   this.password = bcrypt.hashSync(this.password, salt);
 });
 

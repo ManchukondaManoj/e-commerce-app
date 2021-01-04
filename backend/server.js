@@ -1,8 +1,6 @@
+require('dotenv').config();
 const express = require('express');
 const colors = require('colors');
-const dotenv = require('dotenv');
-dotenv.config();
-
 require('./config/db.js');
 const Routes = require('./routes/index.js');
 const { notFound, errorHandler } = require('./middleware');
