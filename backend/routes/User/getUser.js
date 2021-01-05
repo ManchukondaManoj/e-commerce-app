@@ -1,5 +1,4 @@
 const User = require('../../models/User');
-const generateToken = require('../../utils/generateToken');
 
 module.exports = async (req, res) => {
   const userObj = new User();
